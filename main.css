@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styles of 2 section */
+.section-2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EBEBEB;
+}
+.section-2-header {
+    align-self: center;
+    width: 90vw;
+}
+.section-2-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    color: #888888;
+    font-size: 22px;
+}
+.section-2-img-container {
+    width: 50vw;
+    height: 50vh;
+}
+.section-2-img-container img {
+    width: 100%;
+}
+/*Hide section of second section*/
+.hide-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2b4e3f;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: column;
+}
+.hide-section-header-text {
+    font-size: 32px;
+    text-align: center;
+    color: #8888
+}
+.hide-section p {
+    width: 60vw;
+    display: flex;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 22px;
+}
+.hide-section button {
+    margin: 0 auto;
+    background-color: #2b4e3e;
+    color: #fff;
+}
+/* Styles of 3 section */
+.section-3 {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+.main-section-container {
+    background-color: #EBEBEB;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+.left-container {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-container {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.img-container img {
+    width: 60vw;
+}
+.container-header {
+    color: #000;
+    font-size: 32px;
+}
+.container-text {
+    margin: 10%;
+    color: #888888;
+    font-size: 22px;
+}
+
+/* Styles of 4 section */
+.section-4 {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+.section-4 .main-section-container {
+    background-image: url('./imgs/section_4_background.png');
+    background-repeat: no-repeat;
+}
+.section-4 .left-container .img-container {
+    width: 60vw;
+    justify-content: start;
+}
+.get-it-now-button {
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: white;
+    color: #2b4e3f;
+    width: 400px;
+    outline: none;
+}
+.section-4-text {
+    color: #fff;
+}
