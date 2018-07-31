@@ -80,20 +80,23 @@
             <div class="section-header">SOME PICS FROM COMICS</div>
             <div class="slider-box">
                 <div class="slider-select-box">
-                    <span class="slider-img-num">-01-</span>
-                    <span class="slider-img-num">-02-</span>
-                    <span class="slider-img-num">-03-</span>
-                    <span class="slider-img-num">-04-</span>
+                    <span onclick="selectImg(0)" class="slider-img-num">-01-</span>
+                    <span onclick="selectImg(1)" class="slider-img-num">-02-</span>
+                    <span onclick="selectImg(2)" class="slider-img-num">-03-</span>
+                    <span onclick="selectImg(3)" class="slider-img-num">-04-</span>
                 </div>
                 <div class="slider-image-box">
                     <div class="slider-front-image">
-                        <img class="slider-image" src="./imgs/sp-1.png" alt="">
-                        <img src="./imgs/arrow%20right.png" alt="">
+                        <img onclick="selectLeft()" class="left-arrow" src="./imgs/arrow%20left.png" alt="">
+                        <img id="slider-img-front" class="slider-image" src="./imgs/sp-1.png" alt="">
+                        <img onclick="selectRight() "class="right-arrow" src="./imgs/arrow%20right.png" alt="">
                     </div>
                     <div class="slider-right-back-image">
-                        <img class="slider-image" src="./imgs/sp-2.png" alt="">
+                        <img id="slider-img-right" class="slider-image" src="./imgs/sp-2.png" alt="">
                     </div>
-                    <div class="slider-left-back-image"></div>
+                    <div class="slider-left-back-image">
+                        <img id="slider-img-left" class="slider-image" src="./imgs/sp-2.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,5 +125,7 @@
             </div>
         </div>
     </section>
+
+<script src="./js/slider.js"></script>
 </body>
 </html>

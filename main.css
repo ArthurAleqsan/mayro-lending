@@ -303,6 +303,7 @@
     position: absolute;
     height: 60vh;
     z-index: 3;
+    display: flex;
 }
 .slider-image {
     width: 100%;
@@ -313,6 +314,39 @@
     height: 50vh;
     z-index: 2;
     right: 0;
+}
+.slider-right-back-image img {
+    opacity: 0.5;
+}
+.slider-left-back-image {
+    width: 50%;
+    position: absolute;
+    height: 50vh;
+    z-index: 2;
+    left: 0;
+}
+.slider-left-back-image img {
+    display: none;
+    opacity: 0.5;
+}
+.right-arrow {
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    align-self: center;
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+}
+.left-arrow {
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    align-self: center;
+    position: relative;
+    left: 45px;
+    cursor: pointer;
+    display: none;
 }
 
 
