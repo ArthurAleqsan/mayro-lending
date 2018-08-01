@@ -1,15 +1,20 @@
 const imgArr = [
     'http://'+window.location.host+'/landing/imgs/sp-1.png',
     'http://'+window.location.host+'/landing/imgs/sp-2.png',
-    'http://'+window.location.host+'/landing/imgs/offer.png',
-    'http://'+window.location.host+'/landing/imgs/footer.png'
+    'http://'+window.location.host+'/landing/imgs/sp-3.png',
+    'http://'+window.location.host+'/landing/imgs/sp-4.png'
     ];
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 const sliderImg = document.querySelector('#slider-img-front');
 const sliderImgLeft = document.querySelector('#slider-img-left');
 const sliderImgRight = document.querySelector('#slider-img-right');
+const selectNumArr = document.getElementsByClassName('slider-img-num');
 function selectImg(num) {
+    for(let i = 0; i < 4; i++) {
+        selectNumArr[i].style.opacity = 0.5;
+    }
+    selectNumArr[num].style.opacity = 1;
 
 
     if(num === 3) {
@@ -36,14 +41,15 @@ function selectImg(num) {
         }
     }
     sliderImg.src = imgArr[num];
-
-    console.log(num)
 }
 function selectRight() {
+    for(let i = 0; i < 4; i++) {
+        selectNumArr[i].style.opacity = 0.5;
+    }
 
     const index = imgArr.indexOf(sliderImg.src);
 
-
+    // selectNumArr[index].style.opacity = 1;
     leftArrow.style.display = 'block';
 
     if(index !== 3) {
@@ -51,7 +57,6 @@ function selectRight() {
         rightArrow.style.display = 'block';
         sliderImgLeft.style.display = 'block';
         sliderImgLeft.src = imgArr[index];
-        console.log(index)
         if(index === 3) sliderImgRight.style.display = 'none';
         sliderImgRight.src = imgArr[index + 2]
         sliderImgRight.style.display = 'block'
@@ -60,7 +65,11 @@ function selectRight() {
 
 }
 function selectLeft() {
+    for(let i = 0; i < 4; i++) {
+        selectNumArr[i].style.opacity = 0.5;
+    }
     const index = imgArr.indexOf(sliderImg.src);
+    // selectNumArr[index - 1].style.opacity = 1;
     sliderImg.src = imgArr[index - 1];
     rightArrow.style.display = 'block';
     sliderImgLeft.style.display = 'block';

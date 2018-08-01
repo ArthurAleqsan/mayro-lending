@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Armenian Velvet Revolution</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/onepage-scroll.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/min-main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/jquery.onepage-scroll.js"></script>
 </head>
 <body>
-    <section class="section-1" id="section-1">
+<div class="main">
+    <section class="section section-1" id="section-1">
         <div class="main-container">
             <div class="main-container-shadow">
                 <div class="content-box">
-                    <div class="content-header"><h2>ARMENIAN</h2><p>VELVET REVOLUTION</p></div>
+                    <div class="content-header"><h2>THE ARMENIAN</h2><p>VELVET REVOLUTION</p></div>
                     <div class="content-desc">THE TRUE STORY ABOUT ARMENIAN DREAMERS, WHO OPPOSED THE CRIMINAL
                         POWER-REGIME AND MADE THE NON-VIOLENT REVOLUTION OF LOVE AND SOLIDARITY.
                         This comic book is about Armenian nation, who united around Nikol Pashinyan and his team.</div>
                     <button class="get-it-now-button">GET IT NOW</button>
-                    <div><i class="fas fa-chevron-down"></i></div>
+                    <div><i onclick="moveDown()" class="fas fa-chevron-down"></i></div>
                 </div>
             </div>
-            </div>
+        </div>
+
     </section>
-    <section class="section-2" id="section-2">
+    <section class="section section-2" id="section-2">
         <h2 class="section-header">HEROES OF THE STORY</h2>
         <div class="section-2-img-container">
             <div class="img-right"><img src="./imgs/sp-5-1.png" alt="Սելֆի"></div>
@@ -38,7 +44,7 @@
             <button class="get-it-now-button">GET IT NOW</button>
         </div>
     </section>
-    <section class="section-3" id='section-3'>
+    <section class="section section-3" id='section-3'>
         <div class="main-section-container">
             <div class="left-container">
                 <div class="img-container">
@@ -58,7 +64,7 @@
             </div>
         </div>
     </section>
-    <section class="section-4" id="section-4">
+    <section class="section section-4" id="section-4">
         <div class="main-container">
             <div class="left-container-text-box">
                 <h2 class="text-box-header">
@@ -75,7 +81,7 @@
 
         </div>
     </section>
-    <section class="section-5" id="section-5">
+    <section class="section section-5" id="section-5">
         <div class="slider-container">
             <div class="section-header">SOME PICS FROM COMICS</div>
             <div class="slider-box">
@@ -95,13 +101,13 @@
                         <img id="slider-img-right" class="slider-image" src="./imgs/sp-2.png" alt="">
                     </div>
                     <div class="slider-left-back-image">
-                        <img id="slider-img-left" class="slider-image" src="./imgs/sp-2.png" alt="">
+                        <img id="slider-img-left" class="slider-image" src="" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-6" id="section-6">
+    <section class="section section-6" id="section-6">
         <div class="main-container">
             <div class="main-box">
                 <div class="main-container-title">Get it on INDIGOGO</div>
@@ -125,7 +131,8 @@
             </div>
         </div>
     </section>
-
+</div>
+<script src="./js/main.js"></script>
 <script src="./js/slider.js"></script>
 </body>
 </html>
