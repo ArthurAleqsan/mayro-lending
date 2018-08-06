@@ -1,10 +1,12 @@
 const imgArr = [
-    'http://'+window.location.host+'/landing/imgs/sp-1.png',
-    'http://'+window.location.host+'/landing/imgs/sp-2.png',
-    'http://'+window.location.host+'/landing/imgs/sp-3.png',
-    'http://'+window.location.host+'/landing/imgs/sp-4.png'
+    'file:///D:/prog/landing/imgs/sp-1.png',
+    'file:///D:/prog/landing/imgs/sp-2.png',
+    'file:///D:/prog/landing/imgs/sp-3.png',
+    'file:///D:/prog/landing/imgs/sp-4.png'
     ];
 const leftArrow = document.querySelector('.left-arrow');
+console.log(leftArrow.src)
+console.log(window.location)
 const rightArrow = document.querySelector('.right-arrow');
 const sliderImg = document.querySelector('#slider-img-front');
 const sliderImgLeft = document.querySelector('#slider-img-left');

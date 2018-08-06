@@ -214,7 +214,7 @@ body {
     width: 100%;
     height: 80%;
 }
-.img-container img {
+.barikad-img {
     width: 60vw;
 }
 .container-header {
@@ -225,6 +225,9 @@ body {
     margin: 10%;
     color: #888888;
     font-size: 22px;
+}
+.hiden-img {
+    display: none;
 }
 /* Styles of 4 section */
 .section-4 {
@@ -258,6 +261,10 @@ body {
 .left-container-text-box button {
     background-color: #fff;
     color: #393F1F;
+    font-family: Markazi Text;
+}
+.hidden-background-image {
+    display: none;
 }
 /* Styles of 5 section */
 .section-5 {
@@ -306,7 +313,7 @@ body {
     align-items: center;
 }
 .slider-front-image {
-    width: 60%;
+    width: 700px;
     position: absolute;
     height: 60vh;
     z-index: 3;
@@ -432,4 +439,10 @@ body {
     width: 40px;
     margin: 10px;
     cursor: pointer;
+}
+.section-6-hidden-block {
+    display: none;
+}
+.hidden-block-header {
+    font-family: Markazi Text;
 }
